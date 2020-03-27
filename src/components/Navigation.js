@@ -16,7 +16,7 @@ const Navigation = () => {
                 <button id="homeButton">HOME</button>
             </NavLink>
             <NavLink to={`/cart`}>
-                <button id="homeButton">CART</button>
+                <button id="cartButton">CART</button>
             </NavLink>
         </PizzaNav>
     )

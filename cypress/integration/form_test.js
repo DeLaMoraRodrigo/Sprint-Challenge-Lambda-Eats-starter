@@ -48,6 +48,29 @@ describe("Adding Tests to Form", function(){
           .should("include", "/")
 
     })
+
+    it("Checks the cart page", function(){
+        cy.get('#cartButton')
+          .click()
+        cy.get('#deliveryPickup')
+          .select("Delivery")
+          .should("have.value", "Delivery")
+          cy.get('input[name="fork"]')
+          .check()
+          .should("be.checked")
+        cy.get('input[name="spoon"]')
+          .check()
+          .should("be.checked")
+        cy.get('input[name="knife"]')
+          .check()
+          .should("be.checked")
+        cy.get('input[name="straw"]')
+          .check()
+          .should("be.checked")
+        cy.get('button[type="submit"]')
+          .click()
+        
+    })
     // it("Checks Form Validation Error Messages", function(){
     //     cy.get('input[name="name"]')
     //       .type("a")
