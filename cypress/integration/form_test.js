@@ -37,6 +37,17 @@ describe("Adding Tests to Form", function(){
           .click()
     })
 
+    it("Checks to see if home button works from Form Page", function(){
+        cy.get('#pizzaButton')
+          .click()
+        cy.url()
+          .should("include", "/pizza")
+        cy.get('#homeButton')
+          .click()
+        cy.url()
+          .should("include", "/")
+
+    })
     // it("Checks Form Validation Error Messages", function(){
     //     cy.get('input[name="name"]')
     //       .type("a")

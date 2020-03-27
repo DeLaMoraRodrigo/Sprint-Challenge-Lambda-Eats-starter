@@ -13,7 +13,7 @@ const Navigation = () => {
         <PizzaNav>
             <h1>Lambda Eats</h1>
             <NavLink to={`/`}>
-                <button>HOME</button>
+                <button id="homeButton">HOME</button>
             </NavLink>
         </PizzaNav>
     )
