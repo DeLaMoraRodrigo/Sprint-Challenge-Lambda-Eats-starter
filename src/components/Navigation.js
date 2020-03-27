@@ -15,6 +15,9 @@ const Navigation = () => {
             <NavLink to={`/`}>
                 <button id="homeButton">HOME</button>
             </NavLink>
+            <NavLink to={`/cart`}>
+                <button id="homeButton">CART</button>
+            </NavLink>
         </PizzaNav>
     )
 }
